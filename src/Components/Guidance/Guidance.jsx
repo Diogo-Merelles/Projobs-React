@@ -9,12 +9,14 @@ const Guidance = () => {
   const [showTab, setShowTab] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const RotateHandler = () => setIsOpen(!isOpen);
+  // const RotateHandler = () => setIsOpen(!isOpen);
+  
   const Rotate = isOpen ? "rotate(-180deg)" : "rotate(0)"; //Good practice?
   
   
   const onClick = () => {
     setShowTab(!showTab)
+    setIsOpen(!isOpen)
   };
 
   return (
@@ -28,7 +30,7 @@ const Guidance = () => {
           </div>
           <div className="carousel-title-right">
             <button className="user-flag" id="toggle-btn" onClick={onClick} >
-              <span className="projobs-banner-hiddenTab" onClick={RotateHandler}>
+              <span className="projobs-banner-hiddenTab" onClick={onClick}>
                 Projobs
                 <FontAwesomeIcon style={{transform: Rotate}} className="chevron-icon" icon={faChevronDown} />
               </span>

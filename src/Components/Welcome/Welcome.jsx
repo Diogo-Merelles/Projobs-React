@@ -1,45 +1,22 @@
 import React from "react";
-import topCardImg from "../../images/top-card-image.svg";
+// import topCardImg from "../../images/top-card-image.svg";
 import SearchIcon from "../../images/icons8-search.svg";
 import "./Welcome.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import MainCard from "./MainCard/MainCard";
+import SubCard from "./SubCard/SubCard";
 
 const Welcome = () => {
   return (
     <div>
-      <div className="top-card">
-        <div className="top-card-left w-50">
-          <div className="top-banner">Projobs</div>
-          <h1 className="top-banner-title">
-            Hi Diogo, here's what you get by upgrading to Projobs.
-          </h1>
-          <div className="top-card-text">
-            <div className="text-container">
-              <i className="fa fa-check"></i>
-              <p className="text-container-item">
-                Boost your visibility among recruiters
-              </p>
-            </div>
-            <div className="text-container">
-              <i className="fa fa-check"></i>
-              <p className="text-container-item">
-                Set jobseeker criteria for you next job
-              </p>
-            </div>
-            <div className="text-container">
-              <i className="fa fa-check"></i>
-              <p className="text-container-item">
-                Gain exclusive access to expert knowledge
-              </p>
-            </div>
-          </div>
-          <button className="top-card-button">Get Projobs</button>
-        </div>
-        <div className="top-card-right w-50">
-          <img src={topCardImg} alt="top card svg" className="top-card-svg" />
-        </div>
-      </div>
+      <MainCard />
+      {/* <SubCard 
+          image=""
+          title="Have any recruiters visited your profile?"
+          subTitle="Find out now by browsing your profile visitors."
+          activeRef=""
+          /> */}
       <div className="bottom-card-container">
         <div className="bottom-card">
           <div className="left-bottom-card-left">
