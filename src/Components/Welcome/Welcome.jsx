@@ -1,11 +1,13 @@
 import React from "react";
-import topCardImg from '../../images/top-card-image.svg'
-import SearchIcon from  '../../images/icons8-search.svg'
-import './Welcome.css'
+import topCardImg from "../../images/top-card-image.svg";
+import SearchIcon from "../../images/icons8-search.svg";
+import "./Welcome.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Welcome = () => {
   return (
-    <div className="main-card">
+    <div>
       <div className="top-card">
         <div className="top-card-left w-50">
           <div className="top-banner">Projobs</div>
@@ -35,11 +37,7 @@ const Welcome = () => {
           <button className="top-card-button">Get Projobs</button>
         </div>
         <div className="top-card-right w-50">
-          <img
-            src={topCardImg}
-            alt="top card svg"
-            className="top-card-svg"
-          />
+          <img src={topCardImg} alt="top card svg" className="top-card-svg" />
         </div>
       </div>
       <div className="bottom-card-container">
@@ -59,7 +57,8 @@ const Welcome = () => {
               Find out now by browsing your profile visitors.
             </div>
             <div className="left-bottom-card-action">
-              Show profile visitors<i className="fa fa-long-arrow-right"></i>
+              <p className="card-action-text">Show profile visitors</p>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
         </div>
@@ -72,13 +71,16 @@ const Welcome = () => {
             />
           </div>
           <div className="right-bottom-card-right">
-            <h2 className="right-bottom-card-title">Fine-tune your visibility</h2>
+            <h2 className="right-bottom-card-title">
+              Fine-tune your visibility
+            </h2>
             <div className="right-bottom-card-subtitle">
               Choose who can and can't see your jobseeker criteria and Projobs
               details.
             </div>
             <div className="right-bottom-card-action">
-              Edit criteria<i className="fa fa-long-arrow-right"></i>
+              <p className="card-action-text">Edit criteria</p>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
         </div>

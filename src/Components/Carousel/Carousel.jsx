@@ -3,13 +3,10 @@ import "./Carousel.css";
 import StarWarsPlaceHolder from "../../images/placeholder-starwards.jpeg";
 
 export const Carousel = (active) => {
-    
   const [highLigthed, setHighLigthed] = useState();
 
-  
-
   return (
-    <div className="main-card">
+    <div>
       <div className="carousel-nav" id="carousel-nav">
         <button id="top-carousel-button" className="top-carousel-button">
           Write job applications
@@ -127,7 +124,10 @@ export const Carousel = (active) => {
           </div>
         </div>
       </div>
-      <button id="bottom-carousel-btn" className={active ? "highligth-carousel" : "top-carousel-button"}>
+      <button
+        id="bottom-carousel-btn"
+        className={active ? "highligth-carousel" : "top-carousel-button"}
+      >
         View All
       </button>
     </div>

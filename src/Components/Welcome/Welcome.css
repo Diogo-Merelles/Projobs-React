@@ -18,6 +18,10 @@ img {
     height: 45%;
     width: 100%;
 }
+
+icon {
+    margin-left: 1em;
+}
 .main-card {
     align-items: center;
     display: flex;
@@ -131,11 +135,7 @@ h2 {
     font-size: 16px;
     margin: 0px 0px 8px;
 }
-.left-bottom-card-action {
-    align-self: flex-end;
-    display: flex;
-    font-size: 16px;
-}
+
 .right-bottom-card-right {
     display: flex;
     flex-wrap: wrap;
@@ -149,10 +149,15 @@ h2 {
     font-size: 16px;
     margin: 0px 0px 8px;
 }
-.right-bottom-card-action {
-    align-self: flex-end;
+.right-bottom-card-action, .left-bottom-card-action {
+    align-items: center;
     display: flex;
+    justify-content: center;
     font-size: 16px;
+}
+
+.card-action-text {
+    padding-right: 1em;
 }
 .fa-long-arrow-right {
     margin-left: 1em;

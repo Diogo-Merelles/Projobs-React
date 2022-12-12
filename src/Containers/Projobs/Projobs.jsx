@@ -2,14 +2,15 @@ import React from 'react'
 import Carousel from '../../Components/Carousel/Carousel';
 import Guidance from '../../Components/Guidance/Guidance';
 import Welcome from '../../Components/Welcome/Welcome';
+import {Styled} from "./styles.js"
 
 export const Projobs = () => {
   return (
-    <React.Fragment>
-    <Welcome />
-    <Guidance />
-    <Carousel />
-    </React.Fragment>
+    <Styled.GridContainer>
+      <Welcome />
+      <Guidance />
+      <Carousel />
+    </Styled.GridContainer>
   )
 }
 
